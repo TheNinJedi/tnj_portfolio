@@ -1,4 +1,21 @@
 TnjPortfolio::Application.routes.draw do
+  root :to => 'static_pages#home'
+  get "path", to: 'controller#action', as: :name_of_path
+
+  #get "web-development", to: "static_pages#web_development", as: :web_development
+  get "home", to: "static_pages#home", as: :home
+
+  get "about-me", to: "static_pages#about_me", as: :about_me
+  
+  get "my-projects", to: "static_pages#my_projects", as: :my_projects
+
+  #get "static_pages/about_me"
+
+  #get "static_pages/my_projects"
+
+  #get "static_pages/home"
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
