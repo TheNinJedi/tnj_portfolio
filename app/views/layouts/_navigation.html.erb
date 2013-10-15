@@ -19,13 +19,16 @@
     
 
     <ul class="nav navbar-nav navbar-right">
-      <li class="Language">
+      <li>
+        <p class="navbar-text"><%= time_tag(Time.now) %></p>
+      </li>
+      <!-- <li class="Language">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
         <ul class="dropdown-menu">
           <li><a href="?locale=en">English</a></li>
           <li><a href="?locale=es">Español</a></li>
         </ul>
-      </li>
+      </li> -->
     </ul>
   </div><!-- /.navbar-collapse -->
 </nav>
