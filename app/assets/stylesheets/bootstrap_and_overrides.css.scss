@@ -1,4 +1,4 @@
-$navbar-default-bg: $primary-color;
+$navbar-default-bg: darken($primary-color, 15%);
 $navbar-default-color: darken($primary-color, 30%);
 $navbar-default-link-color: $navbar-default-color;
 $navbar-default-link-hover-color: darken($navbar-default-color, 20%);
