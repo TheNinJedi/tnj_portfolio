@@ -1,7 +1,9 @@
 TnjPortfolio::Application.routes.draw do
+  devise_for :users
+
   root :to => 'static_pages#home'
   get "path", to: 'controller#action', as: :name_of_path
-
+  
   #get "web-development", to: "static_pages#web_development", as: :web_development
   get "home", to: "static_pages#home", as: :home
 

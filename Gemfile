@@ -6,8 +6,9 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
-
-
+gem 'simple_form'
+gem 'devise'
+gem 'figaro'
 
 group :development do
   gem 'pry-rails'

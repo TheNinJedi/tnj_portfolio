@@ -1,9 +1,13 @@
-$navbar-default-bg: darken($primary-color, 15%);
-$navbar-default-color: darken($primary-color, 30%);
+$body-bg: #006600;
+
+$navbar-default-bg: $primary-color;
+$navbar-default-color: $body-bg;
 $navbar-default-link-color: $navbar-default-color;
 $navbar-default-link-hover-color: darken($navbar-default-color, 20%);
 
 $btn-primary-bg: $primary-color;
 $btn-primary-color: $navbar-default-link-color;
+
+
 
 @import "bootstrap";
