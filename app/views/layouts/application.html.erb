@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TNJPortfolio</title>
+    <title><% content_for?(:seo_title) ? yield(:seo_title) + " | TNJ Portfolio" : "TNJ Portfolio" %></title>
+    <meta name="description" content="<% content_for?(:seo_description) ? yield(:seo_description) : "TNJ Portfolio" %> ">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <%= stylesheet_link_tag    "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>

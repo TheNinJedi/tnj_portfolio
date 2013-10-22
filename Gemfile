@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.13'
+gem 'rails', '3.2.15'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -18,6 +18,18 @@ group :development do
   gem 'powder'
   gem 'xray-rails'
   gem 'letter_opener'
+  gem 'guard'
+  gem 'rb-fsevent', require: false
+  gem 'guard-pow'
+  gem 'guard-minitest'
+  gem 'guard-livereload'
+  gem "rack-livereload"
+  gem 'ruby_gntp'
+end
+
+group :development, :test do
+  gem 'minitest-rails'
+  gem 'factory_girl_rails', ">= 4.2.0"
 end
 
 # Gems used only for assets and not required
