@@ -1,4 +1,8 @@
 TnjPortfolio::Application.routes.draw do
+  get "contact/new"
+
+  get "contact/create"
+
   devise_for :users
 
   root :to => 'static_pages#home'
@@ -17,6 +21,9 @@ TnjPortfolio::Application.routes.draw do
 
   #get "static_pages/home"
 
+    # Contact us form
+  get "contact-us", to: 'contact#new', as: :contact
+  post "contact-us", to: 'contact#create', as: :contact
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

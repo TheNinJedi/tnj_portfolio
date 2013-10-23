@@ -30,7 +30,13 @@ end
 group :development, :test do
   gem 'minitest-rails'
   gem 'factory_girl_rails', ">= 4.2.0"
+  gem 'ffaker'
 end
+
+group :test do
+    
+end
+
 
 # Gems used only for assets and not required
 # in production environments by default.
