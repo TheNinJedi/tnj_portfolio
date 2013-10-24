@@ -24,11 +24,11 @@ group :development do
   gem 'guard-minitest'
   gem 'guard-livereload'
   gem "rack-livereload"
-  gem 'ruby_gntp'
+  #gem 'ruby_gntp'
 end
 
 group :development, :test do
-  gem 'minitest-rails'
+  gem 'minitest-rails', github: 'blowmage/minitest-rails'
   gem 'factory_girl_rails', ">= 4.2.0"
   gem 'ffaker'
 end

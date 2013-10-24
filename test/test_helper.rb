@@ -13,8 +13,6 @@ require "minitest/pride"
 
 class ActiveSupport::TestCase
   include FactoryGirl::Syntax::Methods
-  # Setup all fixtures in test/fixtures/*.(yml|csv) for all tests in alphabetical order.
-  
-
-  # Add more helper methods to be used by all tests here...
 end
+  # Setup all fixtures in test/fixtures/*.(yml|csv) for all tests in alphabetical order.
+  # Add more helper methods to be used by all tests here...

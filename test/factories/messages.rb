@@ -2,6 +2,9 @@
 
 FactoryGirl.define do
   factory :message do
-    new "MyString"
+    email {Faker::Internet.email}
+    name {Faker::Name.name}
+    subject {Faker::Lorem.sentence}
+    body {Faker::Lorem.paragraph}
   end
 end
