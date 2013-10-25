@@ -14,5 +14,10 @@ require "minitest/pride"
 class ActiveSupport::TestCase
   include FactoryGirl::Syntax::Methods
 end
+
+class ActionController::TestCase
+      include FactoryGirl::Syntax::Methods
+      include Devise::TestHelpers
+end
   # Setup all fixtures in test/fixtures/*.(yml|csv) for all tests in alphabetical order.
   # Add more helper methods to be used by all tests here...

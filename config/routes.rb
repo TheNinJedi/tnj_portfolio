@@ -1,7 +1,4 @@
 TnjPortfolio::Application.routes.draw do
-  get "contact/new"
-
-  get "contact/create"
 
   devise_for :users
 
@@ -13,8 +10,6 @@ TnjPortfolio::Application.routes.draw do
 
   get "about-me", to: "static_pages#about_me", as: :about_me
   
-  get "my-projects", to: "static_pages#my_projects", as: :my_projects
-
   #get "static_pages/about_me"
 
   #get "static_pages/my_projects"

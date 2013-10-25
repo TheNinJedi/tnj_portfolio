@@ -29,6 +29,7 @@ end
 
 group :development, :test do
   gem 'minitest-rails', github: 'blowmage/minitest-rails'
+  gem 'minitest-colorize'
   gem 'factory_girl_rails', ">= 4.2.0"
   gem 'ffaker'
 end

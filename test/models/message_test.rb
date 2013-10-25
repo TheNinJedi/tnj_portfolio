@@ -1,8 +1,11 @@
 require "test_helper"
 
+#describe User do - spec syntax
 class MessageTest < ActiveSupport::TestCase
+  
 
-  def setup
+  #let(:user) {build(:user)} - spec syntax
+  before do
     @message = build(:message)
   end
 
