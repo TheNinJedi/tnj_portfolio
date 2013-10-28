@@ -9,15 +9,14 @@ gem 'pg'
 gem 'simple_form'
 gem 'devise'
 gem 'figaro'
+gem 'pry-rails'
 
 group :development do
-  gem 'pry-rails'
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'meta_request'
   gem 'powder'
   gem 'xray-rails'
-  gem 'letter_opener'
   gem 'guard'
   gem 'rb-fsevent', require: false
   gem 'guard-pow'
@@ -32,6 +31,10 @@ group :development, :test do
   gem 'minitest-colorize'
   gem 'factory_girl_rails', ">= 4.2.0"
   gem 'ffaker'
+  gem 'letter_opener'
+  # gem "minitest-matchers"
+  # gem "email_spec" - is dependent on minitest-matchers - research these to help with 
+  # testing mailers - make sure to require them in test_helper.rb
 end
 
 group :test do

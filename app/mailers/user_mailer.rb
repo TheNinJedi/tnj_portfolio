@@ -1,5 +1,5 @@
 class UserMailer < ActionMailer::Base
-  default from: "noreply@TNJ.com"
+  default from: "noreply@TNJ-Portfolio.com"
 
   layout 'email'
   

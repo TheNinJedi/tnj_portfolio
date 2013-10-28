@@ -6,6 +6,6 @@ class ContactMailer < ActionMailer::Base
       @message = message
       mail(to: "support@TNJ-Portfolio.com", from: @message.email, 
       subject: "[TNJ-Portfolio Contact Us] #{@message.subject}" )
-    end
+  end
 
 end

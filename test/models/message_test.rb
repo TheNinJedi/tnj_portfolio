@@ -3,16 +3,11 @@ require "test_helper"
 #describe User do - spec syntax
 class MessageTest < ActiveSupport::TestCase
   
-
   #let(:user) {build(:user)} - spec syntax
   before do
     @message = build(:message)
   end
 
-  def test_valid
-    skip
-    assert @message.valid?
-  end
 
   test "rejects a message without an email" do
     @message.email = nil
