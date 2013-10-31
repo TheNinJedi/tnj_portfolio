@@ -21,7 +21,7 @@ class ContactControllerTest < ActionController::TestCase
 
   test "if it fails it should not send UserMailer, render :new, and flash alert" do
     post :create, message: @message_attributes.merge(name: nil)
-    assert_response :success
+    assert_response :success #saying that we got a code 200 in stead of a code 201 Created.
     assert_template :new
     assert flash[:alert].present?    
   end

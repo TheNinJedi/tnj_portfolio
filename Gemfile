@@ -10,6 +10,7 @@ gem 'simple_form'
 gem 'devise'
 gem 'figaro'
 gem 'pry-rails'
+gem 'paperclip', "~> 3.0"
 
 group :development do
   gem 'better_errors'
