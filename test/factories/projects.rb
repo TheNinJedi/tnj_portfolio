@@ -2,14 +2,14 @@
 
 FactoryGirl.define do
   factory :project do
-    title "MyString"
-    url "MyString"
-    description "MyText"
-    created_at "2013-10-30 16:29:49"
-    published_at "2013-10-30 16:29:49"
-    stats "MyString"
-    seo_title "MyString"
-    seo_description "MyString"
-    user nil
+    title               {Faker::BaconIpsum.word}
+    url                 {Faker::BaconIpsum.word}
+    description         {Faker::BaconIpsum.word}
+    created_at          {Time.now - 2.weeks}
+    published_at        {Time.now - 1.weeks}
+    stats               {Faker::BaconIpsum.sentence}
+    seo_title           "MyString"
+    seo_description     "MyString"
+    user_id             1
   end
 end

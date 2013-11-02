@@ -5,9 +5,14 @@
     <%= f.input :title %>
     <%= f.input :url %>
     <%= f.input :description %>
-    <%= f.input :created_at %>
-    <%= f.input :published_at %>
+    <%= f.input :created_at, include_blank: true %>
+    <%= f.input :published_at, include_blank: true %>
     <%= f.input :stats %>
+    <%= f.simple_fields_for :pictures do |p| %>
+      <%= p.input :image %>
+      <%= p.input :caption %>
+      <%= p.input :description %>
+    <% end %>
     <%= f.input :seo_title %>
     <%= f.input :seo_description %>
     <%= f.association :user %>
