@@ -24,7 +24,7 @@
               <li> 
                 <%= link_to edit_user_registration_path do %>
                   <%# image_tag current_user.avatar.url(:mini), class: 'img-circle' %> 
-                  Signed in as <%= current_user.email %>
+                  Signed in as <%= current_user.full_name %>
                 <% end %>
               </li>
               <!-- <li> <p class='navbar-text'> Signed in as <%# current_user.email %></p> </li> -->

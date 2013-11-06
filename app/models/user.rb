@@ -12,6 +12,10 @@ class User < ActiveRecord::Base
 
   validates :first_name, :last_name, presence: true
 
+  def full_name
+    @full_name = [first_name, last_name].join(" ")
+    #@full_name = "#{first_name} #{last_name}"
+  end
 
   after_create :send_welcome_email
   private
