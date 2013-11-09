@@ -6,6 +6,9 @@ $navbar-default-link-hover-color: darken($navbar-default-color, 20%);
 $btn-primary-bg: $primary-color;
 $btn-primary-color: $navbar-default-link-color;
 
+$modal-content-bg: #B0B0B0;
+$modal-backdrop-bg: $primary-color;
+
 
 
 @import "bootstrap";

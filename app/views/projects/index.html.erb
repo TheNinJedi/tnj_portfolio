@@ -1,39 +1,24 @@
-<h1>Project Gallery</h1>
+<div class='page-header'>
+  <h1>Gallery</h1>
+</div>
+<div class="project-info">Space filler.</div>
+<div class='row'>
+  <% @projects.each do |project| %>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Url</th>
-    <th>Description</th>
-    <th>Created at</th>
-    <th>Published at</th>
-    <th>Stats</th>
-    <th>Seo title</th>
-    <th>Seo description</th>
-    <th>User</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+    <div class='project-tile col-xs-6 col-sm-4 col-md-3 no-gutters' >
+      <div class='project-title'>
+        <h4><%= project.title.try(:titleize) %></h4>
+        <p><%= project.published_at.to_date %></p>
+        <p>
+          <%= link_to "See More >", project_path(project), remote: true %>
+        </p>
+      </div>
 
-<% @projects.each do |project| %>
-  <tr>
-    <td><%= project.title %></td>
-    <td><%= project.url %></td>
-    <td><%= project.description %></td>
-    <td><%= project.created_at %></td>
-    <td><%= project.published_at %></td>
-    <td><%= project.stats %></td>
-    <td><%= project.seo_title %></td>
-    <td><%= project.seo_description %></td>
-    <td><%= project.user %></td>
-    <td><%= link_to 'Show', project %></td>
-    <td><%= link_to 'Edit', edit_project_path(project) %></td>
-    <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
+      <%= image_tag project.pictures.first.image.url(:medium), class: 'img-responsive' %>
+    </div>
+  <% end %>
 
-<br />
+  <%= link_to 'New Project', new_project_path %>
+</div>
 
-<%= link_to 'New Project', new_project_path %>
+

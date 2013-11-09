@@ -11,6 +11,8 @@ gem 'devise'
 gem 'figaro'
 gem 'pry-rails'
 gem 'paperclip', "~> 3.0"
+gem 'jquery-rails'
+gem 'aws-sdk', '~> 1.5.7'
 
 group :development do
   gem 'better_errors'
@@ -53,11 +55,9 @@ group :assets do
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
-
-  gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

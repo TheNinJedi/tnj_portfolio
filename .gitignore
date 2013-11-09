@@ -25,3 +25,5 @@ config/initializers/secret_token.rb
 .powenv
 # Ignore application configuration
 /config/application.yml
+
+Ideas_and.todolist

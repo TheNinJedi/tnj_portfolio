@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
 
   has_many :projects
-  has_many :pictures, as: :pictureable
+  has_one :picture, as: :pictureable
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,

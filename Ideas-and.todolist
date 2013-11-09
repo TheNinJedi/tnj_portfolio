@@ -1,0 +1,39 @@
+TODO:
+Pre 11-04-13:
+  ✔user edit form. add first and last name to edit form. @done (13-11-08 20:31)
+  ☐ pretty up the projects view.
+    11/7 copied bens work with modals and thumbnail display on page.
+    I still want to do stuff with it. make it truly my design.
+  ☐ I need to get all the videos from class and all the other resources from class onto my local machine in its own file.
+
+11/5/13:
+  ☐ 1715ish Ben says we have homework this week. do the CodeSchool courses on JavaScript and jQuery. I will add the coffeescript one as well.
+
+11/6/13:
+  ☐ I need to add the picture upload functionality to my sign up page!! ... unless i choose to depricate the log in feature in favor of myself as the single admin being the only one able to log in.
+
+  ☐ clean up the new project form. the created_at and published_at fields are messy. 
+    ☐ 11/7 i changed the fields to be string fields with placeholders. I need to make sure that doing the date that time will work for when i call the created_at variable in other places like in the modal.
+    Ben says i can use date pickers which is that little pop up calendar.
+    he also says i need to make sure that the format that i type the date in into the string field is the 
+    correct format that rails uses in the db. i can check the console for that format.
+    ☐ also make the user field show the name in stead of the id of the user.
+    ☐ make the ability to create and edit stuff dependant on being logged in as me.
+
+11/8/13:
+
+
+--- ✄ -----------------------
+IDEAS:
+10/28/13:
+  ☐ 17:01 - we made it possible to add a profile pic and i want to create a footer(nav bar maybe?) once youre logged in that has your profile pic in the bottom left corner and any profile editing options there as well. 
+  ☐ 17:08 - center all of my links in the nav bar vertically.
+
+10/30/13:
+  ✔ 19:08 - When i get home i need to figure out how to alter my user edit form so i can add and subsequently change first and last name. @done (13-11-08 20:44)
+  ☐ What ideas do i have for the hackathon on 11-9-13?  I want to have some other project that i create or contribute to with other class mates so that i have a varied portfolio to show.***
+
+11/5/13:
+  ☐ 1812 - in my contact me page if i do have a form for them to send me an email using my mailer do i want to make them provide more info about themselves than just their email? for example. the company they represent, the state they are in, the state/city they are in.
+
+
