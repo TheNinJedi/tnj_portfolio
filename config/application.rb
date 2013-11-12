@@ -60,5 +60,16 @@ module TnjPortfolio
     config.assets.version = '1.0'
     
     config.assets.initialize_on_precompile = false
+
+    config.paperclip_defaults = {
+        :default_url => "#{Rails.root}/assets/:attachment/default/:style.png",
+        :storage => :s3, 
+        :s3_credentials => {
+             :access_key_id =>  ENV['S3_KEY'], 
+             :secret_access_key =>  ENV['S3_SECRET'] 
+             }, 
+             :s3_protocol => 'https', 
+             :bucket =>  ENV['S3_BUCKET'], 
+             :path => "/:attachment/:id/:style.:extension"
   end
 end
