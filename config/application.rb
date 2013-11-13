@@ -71,5 +71,6 @@ module TnjPortfolio
              :s3_protocol => 'https', 
              :bucket =>  ENV['S3_BUCKET'], 
              :path => "/:attachment/:id/:style.:extension"
+    }
   end
 end

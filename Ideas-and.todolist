@@ -20,7 +20,11 @@ Pre 11-04-13:
     ☐ also make the user field show the name in stead of the id of the user.
     ☐ make the ability to create and edit stuff dependant on being logged in as me.
 
-11/8/13:
+11/12/13:
+  ☐ Test the functionality of the S3 and cloudfront implementation
+  ☐ also test the functionality of the asset_sync implementation.
+    i implemented them but i havent tested them yet.
+  ☐ Go through the app and perform all necessary N+1 streamlining.
 
 
 --- ✄ -----------------------

@@ -27,3 +27,5 @@ config/initializers/secret_token.rb
 /config/application.yml
 
 Ideas_and.todolist
+
+public/assets/

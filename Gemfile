@@ -13,6 +13,7 @@ gem 'pry-rails'
 gem 'paperclip', "~> 3.0"
 gem 'jquery-rails'
 gem 'aws-sdk', '~> 1.5.7'
+gem 'unf'
 
 group :development do
   gem 'better_errors'
