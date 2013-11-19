@@ -1,0 +1,49 @@
+body{
+  background-color: black;
+}
+
+.jumbotron{
+  background-color: $primary-color;
+}
+
+.jumbotron h1{
+  color: white;
+  text-align: left;
+}
+
+// div p:nth-child(1){ // saying that the first ptag in everh div has this styling.
+.p1{
+  color: darken($primary-color, 20%);
+  text-align: center;
+  a:link {color: white};    /* unvisited link */
+  a:visited {color: darken(#00FF7F, 20%)}; /* visited link */
+  a:hover {color: #00FF7F};   /* mouse over link */
+  a:active {color: white};  /* selected link */
+}
+
+.p2{
+  color: darken($primary-color, 20%);
+  text-align: right;
+}
+
+.api-container{
+   background-color: darken($primary-color, 20%);
+   margin-bottom: 100px;
+   padding-bottom: 20px;
+}
+
+.api-container h2{
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+
+.api-div-left{
+  float: left;
+  padding-left: 100px;
+}
+
+.api-div-right{
+  float: right;
+  padding-right: 100px;
+}

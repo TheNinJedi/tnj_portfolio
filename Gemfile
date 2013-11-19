@@ -7,13 +7,17 @@ gem 'rails', '3.2.15'
 
 gem 'pg'
 gem 'simple_form'
-gem 'devise'
 gem 'figaro'
 gem 'pry-rails'
 gem 'paperclip', "~> 3.0"
 gem 'jquery-rails'
 gem 'aws-sdk', '~> 1.5.7'
 gem 'unf'
+gem 'draper', '~> 1.3'
+
+gem 'devise'
+gem 'omniauth'
+# gem 'omniauth-twitter'
 
 group :development do
   gem 'better_errors'

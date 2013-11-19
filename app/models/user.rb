@@ -1,21 +1,16 @@
 class User < ActiveRecord::Base
 
-  has_many :projects
-  has_one :picture, as: :pictureable
+  has_many :projects, dependent: :destroy
+  has_one :picture, as: :pictureable, dependent: :destroy
   # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable
+  # :confirmable, :lockable, :timeoutable and 
+  devise  :database_authenticatable, :registerable, :recoverable, :rememberable, :trackable, :validatable, 
+          :omniauthable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation, :remember_me, :first_name, :last_name
+  attr_accessible :first_name, :last_name, :full_name, :email, :password, :password_confirmation, :remember_me
 
   validates :first_name, :last_name, presence: true
-
-  def full_name
-    @full_name = [first_name, last_name].join(" ")
-    #@full_name = "#{first_name} #{last_name}"
-  end
 
   after_create :send_welcome_email
   private

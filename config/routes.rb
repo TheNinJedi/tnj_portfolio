@@ -1,7 +1,8 @@
 TnjPortfolio::Application.routes.draw do
 
-  resources :projects
+  resources :admin, only: :index
 
+  resources :projects
 
   devise_for :users
 

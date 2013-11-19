@@ -25,6 +25,36 @@ Pre 11-04-13:
   ☐ also test the functionality of the asset_sync implementation.
     i implemented them but i havent tested them yet.
   ☐ Go through the app and perform all necessary N+1 streamlining.
+11/13/13:
+  ☐ Factor all CSS out of home.html.erb into a css file.
+  ☐ Add Admin feature.
+    trouble shoot... i cant run rake db:seed...@started(13-11-13 23:02)
+11/14/13:
+  ☐ Look at cocoon gem. allows you to nest form inputs. for example, 
+    via joey, how to do background pattern.
+    body{
+    background-image: url(________);
+    background-repeat: repeat;
+    }
+    put that in application.css.scss
+11/15/13:
+  ☐ This weekend i NEED to implement CanCan or write my own authentication/authorization logic.
+11/18/13:
+  ☐ Make extra pages to showcase the features im not going to use on the main portfolio site. 
+    like sign up and sign in stuff. in stead of just making it redundant code. let it be seen on the front end just make it minimal.
+  ☐ Ask dad what a tech interview is like. get prep help from him.
+  ☐ Get my site up on heroku and accessible via the internet in stead of just my machine.
+    ill want to get it looking at least ok before i do that. 
+    1846 - you know what... screw the colors and styling and crap... i cant stand that right now. i just need to get the
+      features functional and get it up...i want to work on CODING... not style. Coding is what is going to make me my 
+      money. Coding is what i need to get WAY better at.
+    ☐ learn how to do this... dont just copy and paste.
+  ☐ change twitter pic to the one taken at the rail yard.
+
+
+
+
+
 
 
 --- ✄ -----------------------

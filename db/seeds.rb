@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+User.attr_accessible :is_ninjedi 
+User.create first_name: "Kevin", last_name: "Anderson", email: "#{ENV['ADMIN_EMAIL']}", password: "#{ENV['ADMIN_PASSWORD']}", is_ninjedi: true
