@@ -9,6 +9,7 @@ gem 'pg'
 gem 'simple_form'
 gem 'figaro'
 gem 'pry-rails'
+gem 'asset_sync'
 gem 'paperclip', "~> 3.0"
 gem 'jquery-rails'
 gem 'aws-sdk', '~> 1.5.7'
@@ -57,7 +58,6 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem "bootstrap-sass", github: "thomas-mcdonald/bootstrap-sass", branch: '3'
   gem 'uglifier', '>= 1.0.3'
-  gem 'asset_sync'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby

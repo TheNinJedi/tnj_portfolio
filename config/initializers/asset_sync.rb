@@ -1,4 +1,4 @@
-if defined?(AssetSync) #means that if asset sync exists in the env (production for example) then run it. if not then dont.
+# if defined?(AssetSync) #means that if asset sync exists in the env (production for example) then run it. if not then dont.
   AssetSync.configure do |config|
     config.fog_provider = 'AWS'
     config.aws_access_key_id = ENV['S3_KEY']
@@ -27,4 +27,4 @@ if defined?(AssetSync) #means that if asset sync exists in the env (production f
     # Fail silently.  Useful for environments such as Heroku
     config.fail_silently = true
   end
-end
+# end
