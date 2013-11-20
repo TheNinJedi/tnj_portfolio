@@ -66,10 +66,11 @@ TnjPortfolio::Application.configure do
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
   config.action_mailer.delivery_method = :smtp
+  config.action_mailer.default_url_options = { :host => 'tnj-portfolio.herokuapp.com' }
   config.action_mailer.smtp_settings = {
     address:              'smtp.gmail.com',
     port:                 587,
-    domain:               'localhost:3000',
+    domain:               'localhost:3000', # 'tnj-portfolio.herokuapp.com'
     user_name:            ENV['GMAIL_EMAIL'],
     password:             ENV['GMAIL_PASSWORD'],
     authentication:       'plain',
