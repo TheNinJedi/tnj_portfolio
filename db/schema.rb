@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131114032558) do
+ActiveRecord::Schema.define(:version => 20131120004907) do
 
   create_table "messages", :force => true do |t|
     t.string   "new"
@@ -69,6 +69,8 @@ ActiveRecord::Schema.define(:version => 20131114032558) do
     t.string   "first_name"
     t.string   "last_name"
     t.boolean  "is_ninjedi",             :default => false
+    t.string   "provider"
+    t.string   "uid"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

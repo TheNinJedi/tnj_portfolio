@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+</head>
+
+<body>
+
+  <div class="container">
+    <%= link_to "Sign Up", new_user_registration_path %>
+    <%= link_to "Sign In", new_user_session_path %>
+    <%= link_to "Login with Facebook", user_omniauth_authorize_path(:facebook) %>
+  </div>
+
+  <div class="container">
+    <h1>Demo Page</h1>
+    <p>I will demo the different bits of code that I am learning but don't want to include in my site.</p>
+  </div>
+
+  <div class="api-container">
+
+      <h2>Forecast.io API</h2>
+      <%if @ip_info%>
+        <iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="http://forecast.io/embed/#lat=<%= @ip_info['latitude'] %>&lon=<%= @ip_info['longitude'] %>&name=<%= @ip_info['city'] %>"> </iframe>
+      <% end %>
+
+      <hr>
+
+      <h2>Google Map API</h2>
+      <div class="row-center">
+        <%if @ip_info%>
+        <div class="api-div-left">
+          <img src="http://maps.googleapis.com/maps/api/staticmap?center=<%= @ip_info['latitude'] %>,<%= @ip_info['longitude'] %>&zoom=15&size=400x400&sensor=false">
+        </div>
+
+        <div class="api-div-right">
+          <img src="http://maps.googleapis.com/maps/api/streetview?size=400x400&location=<%= @ip_info['latitude'] %>,<%= @ip_info['longitude'] %>&heading=235&sensor=false">
+        </div>
+        <div class="clearfix"></div>
+        <% end %>
+      </div>
+
+  </div>
+
+</body>
+</html>

@@ -1,24 +1,20 @@
 TnjPortfolio::Application.routes.draw do
-
+get "path", to: 'controller#action', as: :name_of_path
   resources :admin, only: :index
 
   resources :projects
 
-  devise_for :users
+  devise_for :users, :controllers => { omniauth_callbacks: "omniauth_callbacks" }
 
   root :to => 'static_pages#home'
-  get "path", to: 'controller#action', as: :name_of_path
+  
   
   #get "web-development", to: "static_pages#web_development", as: :web_development
   get "home", to: "static_pages#home", as: :home
 
   get "about-me", to: "static_pages#about_me", as: :about_me
-  
-  #get "static_pages/about_me"
 
-  #get "static_pages/my_projects"
-
-  #get "static_pages/home"
+  get "demo", to: "static_pages#demo", as: :demo
 
     # Contact us form
   get "contact-us", to: 'contact#new', as: :contact

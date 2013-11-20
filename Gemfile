@@ -17,7 +17,7 @@ gem 'draper', '~> 1.3'
 
 gem 'devise'
 gem 'omniauth'
-# gem 'omniauth-twitter'
+gem 'omniauth-facebook'
 
 group :development do
   gem 'better_errors'
