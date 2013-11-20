@@ -52,6 +52,9 @@ Pre 11-04-13:
   ☐ change twitter pic to the one taken at the rail yard.
 11/19/13:
   ☐ Glyphcons from bootstrap. incorporate them into the app in place of or in addition to buttons.
+  ☐ create tooltips for the SignUp, SignIn, and SignOut buttons.
+    I'll need to do js for that...
+  ☐ find Facebook glyphcon for the sign in with facebook button.
 
 
 

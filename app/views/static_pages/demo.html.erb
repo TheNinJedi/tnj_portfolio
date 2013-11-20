@@ -6,15 +6,20 @@
 
 <body>
 
-  <div class="container">
-    <%= link_to "Sign Up", new_user_registration_path %>
-    <%= link_to "Sign In", new_user_session_path %>
-    <%= link_to "Login with Facebook", user_omniauth_authorize_path(:facebook) %>
-  </div>
-
-  <div class="container">
+  <div class="jumbotron">
     <h1>Demo Page</h1>
     <p>I will demo the different bits of code that I am learning but don't want to include in my site.</p>
+  </div>
+
+  <div class="btn-group">
+    <%= link_to "Sign Up", new_user_registration_path, 
+      class: "glyphicon glyphicon-collapse-up btn btn-default btn-lg" %> 
+    <%= link_to "Sign In", new_user_session_path, 
+      class: "glyphicon glyphicon-log-in btn btn-default btn-lg" %>
+  </div>
+  <div>
+    <%= link_to "Login with Facebook", user_omniauth_authorize_path(:facebook),
+      class: "btn btn-default btn-xl" %>
   </div>
 
   <div class="api-container">
